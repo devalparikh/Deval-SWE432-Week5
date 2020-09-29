@@ -39,17 +39,17 @@ public class Week6 extends HttpServlet
 {
 
     // Location of servlet. env
-    static InetAddress id;
+    static String id = "http://localhost:5000/";
 
     static {
         try {
-            id = InetAddress.getLocalHost();
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
+            id = System.getenv("APP_HOST");;
+        } catch (Exception e) {
+            id = "http://localhost:5000/";
         }
     }
 
-    static String Domain  = id.toString();
+    static String Domain  = id;
     static String Path    = "/week6";
     static String Servlet = "";
 
