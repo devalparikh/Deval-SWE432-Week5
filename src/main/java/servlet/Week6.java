@@ -65,7 +65,8 @@ public class Week6 extends HttpServlet
 
     // Button labels
 
-    static String OperationConcat = "Concat";
+    static String OperationConcatAB = "Concat A to B";
+    static String OperationConcatBC = "Concat B to A";
     static String OperationReset = "Reset";
 
 
@@ -96,8 +97,10 @@ public class Week6 extends HttpServlet
         if ((rhsStr != null) && (rhsStr.length() > 0))
             rhsVal = new String(rhsStr);
 
-        if (operation.equals(OperationConcat)) {
-            rslt = lhsVal+ rhsVal;
+        if (operation.equals(OperationConcatAB)) {
+            rslt = lhsVal + rhsVal;
+        } else if(operation.equals(OperationConcatBC)) {
+            rslt = rhsVal + lhsVal;
         } else if (operation.equals(OperationReset)) {
             request.setAttribute("", request.getParameter("LHS"));
             request.setAttribute("", request.getParameter("RHS"));
@@ -156,11 +159,11 @@ public class Week6 extends HttpServlet
         out.println("");
         out.println(" <table>");
         out.println("  <tr>");
-        out.println("   <td>First value:");
+        out.println("   <td>A) First value:");
         out.println("   <td><input type=\"text\" name=\"LHS\" value=\"" + lhs + "\" size=5>");
         out.println("  </tr>");
         out.println("  <tr>");
-        out.println("   <td>Second value:");
+        out.println("   <td>B) Second value:");
         out.println("   <td><input type=\"text\" name=\"RHS\" value=\"" + rhs + "\" size=5>");
         out.println("  </tr>");
         out.println("  <tr>");
@@ -172,7 +175,8 @@ public class Week6 extends HttpServlet
         out.println(" <br>");
 //        out.println(" <input type=\"submit\" value=\"" + OperationAdd + "\" name=\"Operation\">");
 //        out.println(" <input type=\"submit\" value=\"" + OperationSub + "\" name=\"Operation\">");
-        out.println(" <input type=\"submit\" value=\"" + OperationConcat + "\" name=\"Operation\">");
+        out.println(" <input type=\"submit\" value=\"" + OperationConcatAB + "\" name=\"Operation\">");
+        out.println(" <input type=\"submit\" value=\"" + OperationConcatBC + "\" name=\"Operation\">");
         out.println(" <input type=\"reset\" value=\"" + OperationReset + "\" name=\"reset\">");
 //        out.println(" <input type=\"reset\" value=\"Reset\" name=\"reset\">");
         out.println("</form>");
