@@ -7,7 +7,7 @@
   <script>
     var servletURL = window.location.origin;
   </script>
-<title>First JSP</title>
+<title>Deval | Week 5</title>
 </head>
 <%@ page import="java.util.Date" %>
 <body>
