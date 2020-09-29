@@ -50,7 +50,7 @@ public class Week6 extends HttpServlet
     }
 
     static String Domain  = id.toString();
-    static String Path    = "week6";
+    static String Path    = "/week6";
     static String Servlet = "";
 
     // Location of servlet. local
