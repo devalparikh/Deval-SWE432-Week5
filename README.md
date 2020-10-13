@@ -1,3 +1,16 @@
+# SWE432-001 Java Servlet Assignments
+
+## Usage
+
+- Deployment
+    - in `'
+
+
+
+
+
+
+
 # Using Heroku to deploy servlets and JSPs
 
 This tutorial will show you how to deploy and develop a Heroku app that runs servlets and JSPs.
