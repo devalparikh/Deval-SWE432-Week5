@@ -196,7 +196,6 @@ public class PersistenceFile extends HttpServlet{
     try {
         out.println("  <tr>");
         out.println("   <th>Name</th>");
-        out.println("   <th>Name</th>");
         out.println("   <th>Hobby</th>");
         out.println("   <th>Age</th>");
         out.println("  </tr>");
