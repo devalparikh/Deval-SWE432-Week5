@@ -46,7 +46,7 @@ public class AttributeServlet extends HttpServlet {
         out.println("");
 
         out.println("<body>");
-        out.println("<h1><center>Session attributes</center></h1>");
+        out.println("<h1><center>Session attributes | By: Deval Parikh</center></h1>");
 
         out.println("Enter name, hobby, and value of an attribute");
 
@@ -83,6 +83,8 @@ public class AttributeServlet extends HttpServlet {
 
         out.print("<br><br><a href=\"" + lifeCycleURL + "?action=invalidate\">");
         out.println("Invalidate the session</a>");
+       out.print("<br><br><a href=\"" + "https://github.com/devalparikh/Deval-SWE432-Week5" + "\">");
+       out.println("Source Code</a>");
 
         out.println("</body>");
         out.println("</html>");
