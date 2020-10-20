@@ -23,7 +23,7 @@
 <button onclick="window.location.assign(servletURL+'/deval');">My SWE Page</button>
 <button onclick="window.location.assign(servletURL+'/week6');">In Class Week 6</button>
 <button onclick="window.location.assign(servletURL+'/file');">In Class Week 8</button>
-
+<button onclick="window.location.assign(servletURL+'/attribute');">In Class Week 9</button>
 
 </body>
 </html>

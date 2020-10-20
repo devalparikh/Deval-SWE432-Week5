@@ -1,4 +1,4 @@
-// From "Professional Java Server Programming", Patzer et al.,
+package servlet;// From "Professional Java Server Programming", Patzer et al.,
 
 // Import Servlet Libraries
 import javax.servlet.*;
@@ -90,6 +90,8 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
       out.println("Invalidate the session</a>");
       out.print  ("<br><a href=\"" + lifeCycleURL + "\">");
       out.println("Reload this page</a>");
+      out.print  ("<br><a href=\"" + "attribute" + "\">");
+      out.println("<- Back to attribute</a>");
 
       out.println("</body>");
       out.println("</html>");
